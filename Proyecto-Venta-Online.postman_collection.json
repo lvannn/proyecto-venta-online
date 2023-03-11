@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "e4eee9e6-268b-4f96-bc54-714c7378f942",
+		"name": "Proyecto-Venta-Online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jefferson",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "prueba@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "rol",
+									"value": "ADMIN",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jefferson",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "prueba@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/list",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jefferson@gmail.com",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/delete-user/640aaca8387cf7b9428f6e33",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"delete-user",
+								"640aaca8387cf7b9428f6e33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/delete-user/640aaca8387cf7b9428f6e33",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"delete-user",
+								"640aaca8387cf7b9428f6e33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jefferson@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "halls",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "barra de dulces de 9 unidades",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "300",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "3.55",
+									"type": "default"
+								},
+								{
+									"key": "category",
+									"value": "640ac84dd7a7b818e44cbdc1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/add-product",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"add-product"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "barra de 9 unidades",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/edit-product/640acb45d6bae731b05723e6",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"edit-product",
+								"640acb45d6bae731b05723e6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/list-products",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"list-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/delete-product/640acb45d6bae731b05723e6",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"delete-product",
+								"640acb45d6bae731b05723e6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "dulces",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/add-category",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/list-category",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"list-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/delete-category/640ac84dd7a7b818e44cbdc1",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"delete-category",
+								"640ac84dd7a7b818e44cbdc1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "dulces",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/search",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "dulces",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "product",
+									"value": "640ae6d62fed8d621d7d1583",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/addProduct-category/640be9bde2790d0728c19935",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"addProduct-category",
+								"640be9bde2790d0728c19935"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shopping cart",
+			"item": [
+				{
+					"name": "list ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/list-shopping",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"list-shopping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "640ae6d62fed8d621d7d1583",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "Jefferson",
+									"type": "default"
+								},
+								{
+									"key": "howmany",
+									"value": "44",
+									"type": "default"
+								},
+								{
+									"key": "nit",
+									"value": "123456",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/add-shopping",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"add-shopping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3006/api/delete-shopping/640b969fbba076315b12d3cd",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"delete-shopping",
+								"640b969fbba076315b12d3cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buy bill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "jefferson",
+									"type": "default"
+								},
+								{
+									"key": "products",
+									"value": "640b9a9202e9a2649faa86df",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3006/api/buy",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"buy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
